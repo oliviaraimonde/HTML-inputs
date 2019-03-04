@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <!-- set the character set -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- first step to a responsive site -->
+    <title>NYC Subway</title>
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+    <!-- Your styles should be called here -->
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      	  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      	  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      	<![endif]-->
+  </head>
+
+  <body>
+    <!-- YOUR CONTENT GOES HERE -->
+    <h1>Unlimited Metrocard. Is it worth it for you?</h1>
+
+    <form>
+      <H2>
+        What is the primary way you commute?
+      </H2>
+      <select name="transportation">
+        <option value="Subway">Subway</option>
+        <option value="Train">Train</option>
+        <option value="Bus">Bus</option>
+        <option value="Car">Car</option>
+        <option value="Bike">Bike</option>
+        <option value="Walk">Walk</option>
+      </select>
+    </form>
+
+    <form>
+      <h2>How many times a week do you commute?</h2>
+
+      <input type="text" list="number-commutes">
+      <datalist id="number-commutes">
+        <option value="None. I work from home">
+        <option value="One to seven times a week">
+        <option value="Eight to fourteen times a week">
+        <option value="Greater than fifteen times a week">
+        <option value="I practically live on the train">
+      </datalist>
+    </form>
+
+    <form id="length-commute">
+      <h2>How long is your commute?</h2>
+      <input type="radio"> Zero minutes<br />
+      <input type="radio" checked> Less than an hour<br />
+      <input type="radio"> One to three hours <br />
+      <input type="radio"> I spend more time commuting than at work<br />
+    </form>
+
+
+    <!-- the jQuery library. You need this to be able to use jQuery ($) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Your javascript should be called here -->
+  </body>
+
+</html>
